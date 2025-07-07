@@ -16,8 +16,9 @@ function average(numeri) {
 
 // Snack 5
 function isPalindrome(parola) {
-    const parolaInversa = parola.split("").reverse().join("");
-    return parola === parolaInversa;
+    const parolaTrim = parola.trim();
+    const parolaInversa = parolaTrim.split("").reverse().join("");
+    return parolaTrim === parolaInversa;
 }
 
 
