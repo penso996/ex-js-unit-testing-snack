@@ -9,7 +9,15 @@ function createSlug(stringa) {
     return stringa.toLowerCase();
 }
 
+// Snack 3
+function average(numeri) {
+    return numeri.reduce((acc, numero) => acc + numero, 0) / numeri.length;
+}
+
+
+// EXPORT
 module.exports = {
     getInitials,
-    createSlug
+    createSlug,
+    average
 }
