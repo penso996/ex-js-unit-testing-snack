@@ -4,9 +4,9 @@ function getInitials(nomeCompleto) {
     return `${nome.charAt(0).toUpperCase()}${cognome.charAt(0).toUpperCase()}`;
 }
 
-// Snack 2
+// Snack 2 / 4
 function createSlug(stringa) {
-    return stringa.toLowerCase();
+    return stringa.toLowerCase().replaceAll(" ", "-");
 }
 
 // Snack 3
