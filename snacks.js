@@ -4,6 +4,12 @@ function getInitials(nomeCompleto) {
     return `${nome.charAt(0).toUpperCase()}${cognome.charAt(0).toUpperCase()}`;
 }
 
+// Snack 2
+function createSlug(stringa) {
+    return stringa.toLowerCase();
+}
+
 module.exports = {
     getInitials,
+    createSlug
 }
