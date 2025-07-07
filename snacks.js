@@ -4,8 +4,11 @@ function getInitials(nomeCompleto) {
     return `${nome.charAt(0).toUpperCase()}${cognome.charAt(0).toUpperCase()}`;
 }
 
-// Snack 2 / 4
+// Snack 2-4-6
 function createSlug(stringa) {
+    if (!stringa) {
+        throw new Error("Titolo non valido")
+    }
     return stringa.toLowerCase().replaceAll(" ", "-");
 }
 
